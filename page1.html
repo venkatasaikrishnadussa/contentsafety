@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Moderation Requests</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: url("header.png") no-repeat center;
+        background-size: cover;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .banner-text h1 {
+        background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+        padding: 15px 25px;
+        border-radius: 10px;
+        font-size: 32px;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #3b5998;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .icon {
+        font-size: 20px;
+        color: #ff4c4c;
+      }
+
+      .content-icon {
+        height: 80px;
+      }
+
+      .actions {
+        color: #3b5998;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .actions:hover {
+        color: #ff4c4c;
+      }
+
+      /* Movie Name and Image Alignment */
+      .movie-info {
+        display: flex;
+        justify-content: center;
+      }
+
+      .movie-flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .movie-flex img {
+        margin-right: 10px;
+      }
+
+      .movie-flex span {
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner-text">
+        <h1>Content Safety Moderation System</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Reports from Contenty Safety AI Agent</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Content Type</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dummy Data 1 -->
+          <tr>
+            <td>Feature Film</td>
+            <td class="movie-info">
+              <div class="movie-flex">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273a883e26f90ab617c91b90e56"
+                  alt="Movie Poster"
+                  class="content-icon"
+                />
+                <span>Inception</span>
+              </div>
+            </td>
+            <td>Consumption of Drugs</td>
+            <td>00:42:10</td>
+            <td>00:45:30</td>
+            <td class="actions">
+              <i class="fas fa-exclamation-circle icon"></i> Review
+            </td>
+          </tr>
+          <!-- Dummy Data 2 -->
+          <tr>
+            <td>Series</td>
+            <td class="movie-info">
+              <div class="movie-flex">
+                <img
+                  src="https://resizing.flixster.com/EEM4xDSyN8QtmrWwYJsFE84GwOg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjYyNjE3LndlYnA="
+                  alt="Episode Poster"
+                  class="content-icon"
+                />
+                <span> Breaking Bad S01E03 </span>
+              </div>
+            </td>
+            <td>Intimacy Scene</td>
+            <td>00:12:05</td>
+            <td>00:14:15</td>
+            <td class="actions">
+              <i class="fas fa-exclamation-circle icon"></i> Review
+            </td>
+          </tr>
+          <!-- Dummy Data 3 -->
+          <tr>
+            <td>Feature Film</td>
+            <td class="movie-info">
+              <div class="movie-flex">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BNzY3OWQ5NDktNWQ2OC00ZjdlLThkMmItMDhhNDk3NTFiZGU4XkEyXkFqcGc@._V1_.jpg"
+                  alt="Movie Poster"
+                  class="content-icon"
+                />
+                <span> Joker </span>
+              </div>
+            </td>
+            <td>Sentiment Hurt</td>
+            <td>01:25:00</td>
+            <td>01:30:30</td>
+            <td class="actions">
+              <i class="fas fa-exclamation-circle icon"></i> Review
+            </td>
+          </tr>
+          <!-- Dummy Data 4 -->
+          <tr>
+            <td>Series</td>
+            <td class="movie-info">
+              <div class="movie-flex">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BOGY3NTg1ODMtOGIzZS00YWFiLTgzYzktNzBiYWZkYjcwNGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                  alt="Episode Poster"
+                  class="content-icon"
+                />
+                <span> Game of Thrones S02E09 </span>
+              </div>
+            </td>
+            <td>Consumption of Alcohol</td>
+            <td>00:35:20</td>
+            <td>00:38:00</td>
+            <td class="actions">
+              <i class="fas fa-exclamation-circle icon"></i> Review
+            </td>
+          </tr>
+          <!-- Dummy Data 5 -->
+          <tr>
+            <td>Feature Film</td>
+            <td class="movie-info">
+              <div class="movie-flex">
+                <img
+                  src="https://m.media-amazon.com/images/S/pv-target-images/f9d536e603d73b15c291d209a1fd8c5dd9434d62a6a1e5c7fbf7e94c2cda513d.jpg"
+                  alt="Movie Poster"
+                  class="content-icon"
+                />
+                <span> The Wolf of Wall Street </span>
+              </div>
+            </td>
+            <td>Intimacy Scene</td>
+            <td>01:10:05</td>
+            <td>01:15:30</td>
+            <td class="actions">
+              <i class="fas fa-exclamation-circle icon"></i> Review
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
